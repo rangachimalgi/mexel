@@ -1,0 +1,64 @@
+.clients-section {
+    padding: 4rem 1rem;
+    background: #f9f9f9;
+  }
+  
+  .clients-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #222;
+  }
+  
+  .carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  
+  .client-carousel {
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    padding: 1rem 0;
+  }
+  
+  .client-logo {
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .client-logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .carousel-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    padding: 0 1rem;
+    z-index: 1;
+    transition: color 0.2s ease;
+  }
+  
+  .carousel-btn:hover {
+    color: #d64027;
+  }
+  
+  .carousel-btn.left {
+    position: absolute;
+    left: 0;
+  }
+  
+  .carousel-btn.right {
+    position: absolute;
+    right: 0;
+  }
+  

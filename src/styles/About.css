@@ -1,0 +1,86 @@
+.about-section {
+    padding: 4rem 1rem;
+    background-color: #fff;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .about-image {
+    flex: 1 1 400px;
+    position: relative;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .about-highlight {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: #111;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    max-width: 80%;
+    font-size: 1rem;
+  }
+  
+  .about-content {
+    flex: 1 1 400px;
+  }
+  
+  .about-label {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #999;
+    letter-spacing: 1px;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #222;
+  }
+  
+  .about-content p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .about-points {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .about-points li {
+    padding: 1rem 0;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .about-btn {
+    background: #d64027;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  
