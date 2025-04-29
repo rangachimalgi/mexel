@@ -22,6 +22,7 @@ import Sprayball from "./pages/services/Quality/Sprayball";
 import Dyepenetration from "./pages/services/Quality/Dyepenetration";
 import GasFittings from "./pages/services/Material/GasFittings";
 import ProcessPipingFittings from "./pages/services/Material/ProcessPipingFittings";
+import AboutUs from "./pages/AboutUs";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
       <div className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/projects/process-piping" element={<ProcessPiping />} />
           <Route path="/projects/gas-piping" element={<GasPiping />} />
           <Route path="/projects/utility-piping" element={<UtilityPiping />} />

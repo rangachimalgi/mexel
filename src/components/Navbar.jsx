@@ -19,7 +19,11 @@ const Navbar = () => {
     <nav className={`navbar ${isHome ? "navbar-home" : "navbar-default"}`}>
       <div className="navbar-inner">
         <Link to="/" className="logo">
-          <img src="/mexell-logo.png" alt="Mexell Logo" className="navbar-logo" />
+          <img
+            src="/mexell-logo.png"
+            alt="Mexell Logo"
+            className="navbar-logo"
+          />
         </Link>
 
         <div className="hamburger" onClick={() => setMenuOpen((prev) => !prev)}>
@@ -34,11 +38,9 @@ const Navbar = () => {
           </li>
 
           <li>
-            {isHome ? (
-              <a href="#about">About Us</a>
-            ) : (
-              <Link to="/#about">About Us</Link>
-            )}
+            <Link to="/aboutus" onClick={() => setMenuOpen(false)}>
+              About Us
+            </Link>
           </li>
 
           {/* Our Projects Dropdown */}
@@ -50,11 +52,19 @@ const Navbar = () => {
             <Link to="/projects">Our Projects ▼</Link>
             {projectDropdownOpen && (
               <ul className="dropdown-menu">
-                <li><Link to="/projects/process-piping">Process Piping</Link></li>
-                <li><Link to="/projects/gas-piping">Gas Piping</Link></li>
-                <li><Link to="/projects/utility-piping">Utility Piping</Link></li>
+                <li>
+                  <Link to="/projects/process-piping">Process Piping</Link>
+                </li>
+                <li>
+                  <Link to="/projects/gas-piping">Gas Piping</Link>
+                </li>
+                <li>
+                  <Link to="/projects/utility-piping">Utility Piping</Link>
+                </li>
                 {/* <li><Link to="/projects/ss-ms-fabrications">SS and MS Fabrications</Link></li> */}
-                <li><Link to="/projects/project-gallery">Project Gallery</Link></li>
+                <li>
+                  <Link to="/projects/project-gallery">Project Gallery</Link>
+                </li>
               </ul>
             )}
           </li>
@@ -72,28 +82,76 @@ const Navbar = () => {
                 <li className="dropdown-submenu">
                   <Link to="/services/quality">Quality Services ▶</Link>
                   <ul className="sub-dropdown-menu">
-                    <li><Link to="/services/quality/otbital">Otbital welding</Link></li>
-                    <li><Link to="/services/quality/borescope">Borescope</Link></li>
-                    <li><Link to="/services/quality/pressure">Pressure Testing</Link></li>
-                    <li><Link to="/services/quality/passivation">Passivation</Link></li>
-                    <li><Link to="/services/quality/surface">Surface Roughness</Link></li>
-                    <li><Link to="/services/quality/ultrasonic">Ultrasonic Testing</Link></li>
-                    <li><Link to="/services/quality/sprayball">Sprayball Testing</Link></li>
-                    <li><Link to="/services/quality/dyepenetration">Dye Penetration Testing</Link></li>
+                    <li>
+                      <Link to="/services/quality/otbital">
+                        Otbital welding
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services/quality/borescope">Borescope</Link>
+                    </li>
+                    <li>
+                      <Link to="/services/quality/pressure">
+                        Pressure Testing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services/quality/passivation">
+                        Passivation
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services/quality/surface">
+                        Surface Roughness
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services/quality/ultrasonic">
+                        Ultrasonic Testing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services/quality/sprayball">
+                        Sprayball Testing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services/quality/dyepenetration">
+                        Dye Penetration Testing
+                      </Link>
+                    </li>
                   </ul>
                 </li>
 
                 {/* Other normal links */}
-                <li><Link to="/services/design">Design Services</Link></li>
-                <li><Link to="/services/safety">Safety Services</Link></li>
-                <li><Link to="/projects/ss-ms-fabrications">SS and MS Fabrications</Link></li>
+                <li>
+                  <Link to="/services/design">Design Services</Link>
+                </li>
+                <li>
+                  <Link to="/services/safety">Safety Services</Link>
+                </li>
+                <li>
+                  <Link to="/projects/ss-ms-fabrications">
+                    SS and MS Fabrications
+                  </Link>
+                </li>
 
                 {/* Material Supply and Installation with sub-dropdown */}
                 <li className="dropdown-submenu">
-                  <Link to="/services/material-supply">Material Supply and Installation ▶</Link>
+                  <Link to="/services/material-supply">
+                    Material Supply and Installation ▶
+                  </Link>
                   <ul className="sub-dropdown-menu">
-                    <li><Link to="/services/material-supply/gas-fittings">Gas Fittings</Link></li>
-                    <li><Link to="/services/material-supply/process-piping-fittings">Process Piping Fittings</Link></li>
+                    <li>
+                      <Link to="/services/material-supply/gas-fittings">
+                        Gas Fittings
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services/material-supply/process-piping-fittings">
+                        Process Piping Fittings
+                      </Link>
+                    </li>
                   </ul>
                 </li>
               </ul>
