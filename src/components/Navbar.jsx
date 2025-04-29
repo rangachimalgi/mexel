@@ -53,7 +53,8 @@ const Navbar = () => {
                 <li><Link to="/projects/process-piping">Process Piping</Link></li>
                 <li><Link to="/projects/gas-piping">Gas Piping</Link></li>
                 <li><Link to="/projects/utility-piping">Utility Piping</Link></li>
-                <li><Link to="/projects/ss-ms-fabrications">SS and MS Fabrications</Link></li>
+                {/* <li><Link to="/projects/ss-ms-fabrications">SS and MS Fabrications</Link></li> */}
+                <li><Link to="/projects/project-gallery">Project Gallery</Link></li>
               </ul>
             )}
           </li>
@@ -85,6 +86,7 @@ const Navbar = () => {
                 {/* Other normal links */}
                 <li><Link to="/services/design">Design Services</Link></li>
                 <li><Link to="/services/safety">Safety Services</Link></li>
+                <li><Link to="/projects/ss-ms-fabrications">SS and MS Fabrications</Link></li>
 
                 {/* Material Supply and Installation with sub-dropdown */}
                 <li className="dropdown-submenu">
