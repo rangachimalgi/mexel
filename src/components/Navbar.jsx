@@ -71,11 +71,11 @@ const Navbar = () => {
                 <li className="dropdown-submenu">
                   <Link to="/services/quality">Quality Services ▶</Link>
                   <ul className="sub-dropdown-menu">
-                    <li><Link to="/services/quality/inspection">Inspection Services</Link></li>
-                    <li><Link to="/services/quality/testing">Testing Services</Link></li>
-                    <li><Link to="/services/quality/documentation">Quality Documentation</Link></li>
-                    <li><Link to="/services/quality/control">Quality Control Management</Link></li>
-                    <li><Link to="/services/quality/audits">Quality Audits</Link></li>
+                    <li><Link to="/services/quality/otbital">Otbital welding</Link></li>
+                    <li><Link to="/services/quality/borescope">Borescope</Link></li>
+                    <li><Link to="/services/quality/pressure">Pressure Testing</Link></li>
+                    <li><Link to="/services/quality/passivation">Passivation</Link></li>
+                    <li><Link to="/services/quality/surface">Surface Roughness</Link></li>
                   </ul>
                 </li>
 

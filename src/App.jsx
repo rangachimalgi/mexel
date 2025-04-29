@@ -12,6 +12,11 @@ import DesignServices from "./pages/services/DesignServices";
 import SafetyServices from "./pages/services/SafetyServices";
 import SsmsFabrications from "./pages/projects/SsmsFabrications";
 import QualityServices from "./pages/services/QualityServices";
+import Otbital from "./pages/services/Quality/Otbital";
+import Borescope from "./pages/services/Quality/Borescope";
+import Pressure from "./pages/services/Quality/Pressure";
+import Passivation from "./pages/services/Quality/Passivation";
+import Surface from "./pages/services/Quality/Surface";
 
 const App = () => {
   return (
@@ -27,6 +32,11 @@ const App = () => {
           <Route path="/projects/ss-ms-fabrications" element={<SsmsFabrications />} />
           {/* <Route path="/services" element={<ServicesPage />} /> */}
           <Route path="/services/quality" element={<QualityServices />} />
+          <Route path="/services/quality/otbital" element={<Otbital />} />
+          <Route path="/services/quality/borescope" element={<Borescope />} />
+          <Route path="/services/quality/pressure" element={<Pressure />} />
+          <Route path="/services/quality/passivation" element={<Passivation />} />
+          <Route path="/services/quality/surface" element={<Surface />} />
           <Route path="/services/design" element={<DesignServices />} />
           <Route path="/services/safety" element={<SafetyServices />} />
         </Routes>
