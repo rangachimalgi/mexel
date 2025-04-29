@@ -20,6 +20,8 @@ import Surface from "./pages/services/Quality/Surface";
 import Ultrasonic from "./pages/services/Quality/Ultrasonic";
 import Sprayball from "./pages/services/Quality/Sprayball";
 import Dyepenetration from "./pages/services/Quality/Dyepenetration";
+import GasFittings from "./pages/services/Material/GasFittings";
+import ProcessPipingFittings from "./pages/services/Material/ProcessPipingFittings";
 
 const App = () => {
   return (
@@ -45,6 +47,8 @@ const App = () => {
           <Route path="/services/quality/dyepenetration" element={<Dyepenetration />} />
           <Route path="/services/design" element={<DesignServices />} />
           <Route path="/services/safety" element={<SafetyServices />} />
+          <Route path="/services/material-supply/gas-fittings" element={<GasFittings />} />
+          <Route path="/services/material-supply/process-piping-fittings" element={<ProcessPipingFittings />} />
         </Routes>
       </div>
       <Footer />

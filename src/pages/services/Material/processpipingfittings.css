@@ -1,0 +1,25 @@
+.process-piping-fittings {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    color: #333;
+  }
+  
+  .process-piping-fittings h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .process-piping-fittings p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .process-piping-fittings ul {
+    list-style: disc inside;
+    margin-bottom: 1.5rem;
+  }
+  
