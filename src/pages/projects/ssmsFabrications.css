@@ -32,4 +32,45 @@
   .ssms-fabrications li {
     margin: 0.5rem 0;
   }
+
+  .fabrication-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap; /* allows stacking on mobile */
+    margin-top: 2rem;
+  }
+  
+  .fabrication-image {
+    width: 350px;
+    height: 320px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .fabrication-image img {
+    max-height: 220px;
+    object-fit: contain;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  
+  .fabrication-image img:hover {
+    transform: scale(1.03);
+  }
+  
+  .fabrication-image p {
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
   
