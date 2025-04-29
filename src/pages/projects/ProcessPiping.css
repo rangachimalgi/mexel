@@ -1,0 +1,35 @@
+.process-piping {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    color: #333;
+  }
+  
+  .process-piping h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .process-piping h2 {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: #2c3e50;
+  }
+  
+  .process-piping p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .process-piping ul {
+    list-style: disc inside;
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  
+  .process-piping li {
+    margin: 0.5rem 0;
+  }
+  

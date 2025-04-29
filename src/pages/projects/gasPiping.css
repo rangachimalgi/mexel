@@ -1,0 +1,35 @@
+.gas-piping {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    color: #333;
+  }
+  
+  .gas-piping h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .gas-piping h2 {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: #2c3e50;
+  }
+  
+  .gas-piping p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .gas-piping ul {
+    list-style: disc inside;
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  
+  .gas-piping li {
+    margin: 0.5rem 0;
+  }
+  

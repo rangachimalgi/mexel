@@ -1,20 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [projectDropdownOpen, setProjectDropdownOpen] = useState(false);
+  const [serviceDropdownOpen, setServiceDropdownOpen] = useState(false);
   const location = useLocation();
   const isHome = location.pathname === "/";
+
+  useEffect(() => {
+    setServiceDropdownOpen(false);
+    setProjectDropdownOpen(false);
+    setMenuOpen(false);
+  }, [location.pathname]);
 
   return (
     <nav className={`navbar ${isHome ? "navbar-home" : "navbar-default"}`}>
       <div className="navbar-inner">
-      <Link to="/" className="logo">
-      <Link to="/" className="logo">
-  <img src="/mexell-logo.png" alt="Mexell Logo" className="navbar-logo" />
-</Link>
-</Link>
+        <Link to="/" className="logo">
+          <img src="/mexell-logo.png" alt="Mexell Logo" className="navbar-logo" />
+        </Link>
 
         <div className="hamburger" onClick={() => setMenuOpen((prev) => !prev)}>
           <span />
@@ -26,37 +32,76 @@ const Navbar = () => {
           <li>
             <Link to="/">Home</Link>
           </li>
-          {isHome ? (
-            <>
-              <li>
-                <a href="#about">About Us</a>
-              </li>
-              <li>
-                <a href="/projects">Our Projects</a>
-              </li>
-              <li>
-                <Link to="/services">Our Services</Link>
-              </li>
-              <li>
-                <a href="#contact">Contact Us</a>
-              </li>
-            </>
-          ) : (
-            <>
-              <li>
-                <Link to="/#about">About Us</Link>
-              </li>
-              <li>
-                <Link to="/#projects">Our Projects</Link>
-              </li>
-              <li>
-                <Link to="/services">Our Services</Link>
-              </li>
-              <li>
-                <Link to="/#contact">Contact Us</Link>
-              </li>
-            </>
-          )}
+
+          <li>
+            {isHome ? (
+              <a href="#about">About Us</a>
+            ) : (
+              <Link to="/#about">About Us</Link>
+            )}
+          </li>
+
+          {/* Our Projects Dropdown */}
+          <li
+            className="dropdown"
+            onMouseEnter={() => setProjectDropdownOpen(true)}
+            onMouseLeave={() => setProjectDropdownOpen(false)}
+          >
+            <Link to="/projects">Our Projects ▼</Link>
+            {projectDropdownOpen && (
+              <ul className="dropdown-menu">
+                <li><Link to="/projects/process-piping">Process Piping</Link></li>
+                <li><Link to="/projects/gas-piping">Gas Piping</Link></li>
+                <li><Link to="/projects/utility-piping">Utility Piping</Link></li>
+                <li><Link to="/projects/ss-ms-fabrications">SS and MS Fabrications</Link></li>
+              </ul>
+            )}
+          </li>
+
+          {/* Our Services Dropdown */}
+          <li
+            className="dropdown"
+            onMouseEnter={() => setServiceDropdownOpen(true)}
+            onMouseLeave={() => setServiceDropdownOpen(false)}
+          >
+            <Link to="/services">Our Services ▼</Link>
+            {serviceDropdownOpen && (
+              <ul className="dropdown-menu">
+                {/* Quality Services with sub-dropdown */}
+                <li className="dropdown-submenu">
+                  <Link to="/services/quality">Quality Services ▶</Link>
+                  <ul className="sub-dropdown-menu">
+                    <li><Link to="/services/quality/inspection">Inspection Services</Link></li>
+                    <li><Link to="/services/quality/testing">Testing Services</Link></li>
+                    <li><Link to="/services/quality/documentation">Quality Documentation</Link></li>
+                    <li><Link to="/services/quality/control">Quality Control Management</Link></li>
+                    <li><Link to="/services/quality/audits">Quality Audits</Link></li>
+                  </ul>
+                </li>
+
+                {/* Other normal links */}
+                <li><Link to="/services/design">Design Services</Link></li>
+                <li><Link to="/services/safety">Safety Services</Link></li>
+
+                {/* Material Supply and Installation with sub-dropdown */}
+                <li className="dropdown-submenu">
+                  <Link to="/services/material-supply">Material Supply and Installation ▶</Link>
+                  <ul className="sub-dropdown-menu">
+                    <li><Link to="/services/material-supply/gas-fittings">Gas Fittings</Link></li>
+                    <li><Link to="/services/material-supply/process-piping-fittings">Process Piping Fittings</Link></li>
+                  </ul>
+                </li>
+              </ul>
+            )}
+          </li>
+
+          <li>
+            {isHome ? (
+              <a href="#contact">Contact Us</a>
+            ) : (
+              <Link to="/#contact">Contact Us</Link>
+            )}
+          </li>
         </ul>
       </div>
     </nav>
