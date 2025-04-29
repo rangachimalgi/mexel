@@ -76,6 +76,9 @@ const Navbar = () => {
                     <li><Link to="/services/quality/pressure">Pressure Testing</Link></li>
                     <li><Link to="/services/quality/passivation">Passivation</Link></li>
                     <li><Link to="/services/quality/surface">Surface Roughness</Link></li>
+                    <li><Link to="/services/quality/ultrasonic">Ultrasonic Testing</Link></li>
+                    <li><Link to="/services/quality/sprayball">Sprayball Testing</Link></li>
+                    <li><Link to="/services/quality/dyepenetration">Dye Penetration Testing</Link></li>
                   </ul>
                 </li>
 

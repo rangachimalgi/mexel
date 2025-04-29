@@ -17,6 +17,9 @@ import Borescope from "./pages/services/Quality/Borescope";
 import Pressure from "./pages/services/Quality/Pressure";
 import Passivation from "./pages/services/Quality/Passivation";
 import Surface from "./pages/services/Quality/Surface";
+import Ultrasonic from "./pages/services/Quality/Ultrasonic";
+import Sprayball from "./pages/services/Quality/Sprayball";
+import Dyepenetration from "./pages/services/Quality/Dyepenetration";
 
 const App = () => {
   return (
@@ -37,6 +40,9 @@ const App = () => {
           <Route path="/services/quality/pressure" element={<Pressure />} />
           <Route path="/services/quality/passivation" element={<Passivation />} />
           <Route path="/services/quality/surface" element={<Surface />} />
+          <Route path="/services/quality/ultrasonic" element={<Ultrasonic />} />
+          <Route path="/services/quality/sprayball" element={<Sprayball />} />
+          <Route path="/services/quality/dyepenetration" element={<Dyepenetration />} />
           <Route path="/services/design" element={<DesignServices />} />
           <Route path="/services/safety" element={<SafetyServices />} />
         </Routes>
