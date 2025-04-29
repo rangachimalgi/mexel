@@ -11,6 +11,7 @@ import UtilityPiping from "./pages/projects/UtilityPiping";
 import DesignServices from "./pages/services/DesignServices";
 import SafetyServices from "./pages/services/SafetyServices";
 import SsmsFabrications from "./pages/projects/SsmsFabrications";
+import QualityServices from "./pages/services/QualityServices";
 
 const App = () => {
   return (
@@ -24,7 +25,8 @@ const App = () => {
           <Route path="/projects/gas-piping" element={<GasPiping />} />
           <Route path="/projects/utility-piping" element={<UtilityPiping />} />
           <Route path="/projects/ss-ms-fabrications" element={<SsmsFabrications />} />
-          <Route path="/services" element={<ServicesPage />} />
+          {/* <Route path="/services" element={<ServicesPage />} /> */}
+          <Route path="/services/quality" element={<QualityServices />} />
           <Route path="/services/design" element={<DesignServices />} />
           <Route path="/services/safety" element={<SafetyServices />} />
         </Routes>
