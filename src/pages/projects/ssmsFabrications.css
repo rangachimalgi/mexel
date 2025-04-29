@@ -1,0 +1,35 @@
+.ssms-fabrications {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    color: #333;
+  }
+  
+  .ssms-fabrications h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .ssms-fabrications h2 {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: #2c3e50;
+  }
+  
+  .ssms-fabrications p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .ssms-fabrications ul {
+    list-style: disc inside;
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  
+  .ssms-fabrications li {
+    margin: 0.5rem 0;
+  }
+  
