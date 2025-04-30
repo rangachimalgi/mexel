@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ProcessPiping from "./pages/projects/ProcessPiping";
 import Footer from "./components/Footer";
-import ServicesPage from "./pages/ServicesPage";
 import Home from "./pages/Home"; // Create a new Home component for the main landing content
 import "./App.css";
 import GasPiping from "./pages/projects/GasPiping";
