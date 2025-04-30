@@ -1,20 +1,29 @@
 .passivation {
-    max-width: 800px;
-    margin: 4rem auto;
-    padding: 0 2rem;
-    color: #333;
-  }
-  
-  .passivation h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    color: #2c3e50;
-  }
-  
-  .passivation p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
-  
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  color: #333;
+}
+
+.passivation h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.passivation p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.passivation-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}

@@ -6,6 +6,12 @@ const Surface = () => {
     <div className="surface-roughness">
       <h1>Surface Roughness Testing</h1>
 
+      <img
+        src="/Surfaceroughness.png"
+        alt="Surface Roughness Equipment"
+        className="surface-image"
+      />
+
       <p>
         In 2025, <strong>Mexell Engineering</strong> proudly expands its capabilities by
         introducing <em>Surface Roughness Testing</em>—a precision technique designed to

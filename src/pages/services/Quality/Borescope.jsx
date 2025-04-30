@@ -6,6 +6,12 @@ const Borescope = () => {
     <div className="borescope">
       <h1>Borescope Technology</h1>
 
+      <img
+        src="/Borescope.png"
+        alt="Borescope Equipment"
+        className="borescope-image"
+      />
+
       <p>
         As a part of our continuous efforts to innovate and deliver enhanced inspection
         solutions, we are proud to introduce <em>Borescope Technology</em> in 2025. This

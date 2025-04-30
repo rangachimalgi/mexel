@@ -6,6 +6,12 @@ const Dyepenetration = () => {
     <div className="dye-penetration">
       <h1>Dye Penetration Testing</h1>
 
+      <img
+        src="/Dyepenetration.png"
+        alt="Dyepenetration Equipment"
+        className="dyepenetration-image"
+      />
+
       <p>
         In 2025, <strong>Mexell Engineering</strong> is proud to enhance its quality
         assurance capabilities by introducing <em>Dye Penetration Testing</em>, a

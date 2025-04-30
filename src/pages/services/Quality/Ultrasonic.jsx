@@ -6,6 +6,12 @@ const Ultrasonic = () => {
     <div className="ultrasonic-testing">
       <h1>Ultrasonic Testing</h1>
 
+      <img
+        src="/Ultrasonic.png"
+        alt="Ultrasonic Equipment"
+        className="ultrasonic-image"
+      />
+
       <p>
         In 2025, <strong>Mexell Engineering</strong> proudly enhances its capabilities by
         introducing <em>Ultrasonic Testing</em>, a non-destructive testing method that uses
