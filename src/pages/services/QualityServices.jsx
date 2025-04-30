@@ -6,19 +6,27 @@ const QualityServices = () => {
     <div className="quality-services">
       <h1>Introducing Quality Engineering</h1>
 
+      <div className="design-image-wrapper">
+        <img
+          src="/qualityservice.png"
+          alt="3D Mechanical Equipment"
+          className="design-machine-img"
+        />
+      </div>
+
       <p>
-        In 2025, we are thrilled to unveil a new milestone in our journey—
-        our dedicated <strong>Quality Engineering Department</strong>. This
-        strategic addition reflects our unwavering commitment to excellence
-        and precision in every project we undertake.
+        In 2025, we are thrilled to unveil a new milestone in our journey— our
+        dedicated <strong>Quality Engineering Department</strong>. This
+        strategic addition reflects our unwavering commitment to excellence and
+        precision in every project we undertake.
       </p>
 
       <p>
         Leading this initiative is our skilled Engineer, Sharath Kumar, who
-        brings a wealth of experience in piping documentation since 2019.
-        Having tackled and resolved numerous documentation challenges in
-        process piping, Sharath’s expertise positions us to meet and exceed
-        industry standards with confidence.
+        brings a wealth of experience in piping documentation since 2019. Having
+        tackled and resolved numerous documentation challenges in process
+        piping, Sharath’s expertise positions us to meet and exceed industry
+        standards with confidence.
       </p>
 
       <p>
@@ -39,11 +47,10 @@ const QualityServices = () => {
       </ul>
 
       <p>
-        By integrating these cutting-edge processes, we aim to deliver
-        enhanced reliability, safety, and performance across all our
-        projects. This new chapter signifies <strong>Mexell Engineering</strong>’s
-        steadfast dedication to quality, innovation, and industry-leading
-        solutions.
+        By integrating these cutting-edge processes, we aim to deliver enhanced
+        reliability, safety, and performance across all our projects. This new
+        chapter signifies <strong>Mexell Engineering</strong>’s steadfast
+        dedication to quality, innovation, and industry-leading solutions.
       </p>
     </div>
   );

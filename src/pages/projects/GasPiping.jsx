@@ -5,7 +5,19 @@ const GasPiping = () => {
   return (
     <div className="gas-piping">
       <h1>Gas Piping</h1>
-      <p>Gas piping refers to the network of pipes and fittings used to distribute and transport gases, such as industrial gases, in various settings, including:</p>
+      <p>
+        Gas piping refers to the network of pipes and fittings used to
+        distribute and transport gases, such as industrial gases, in various
+        settings, including:
+      </p>
+
+      <div className="design-image-wrapper">
+        <img
+          src="/gaspiping.png"
+          alt="3D Mechanical Equipment"
+          className="design-machine-img"
+        />
+      </div>
 
       <h2>Applications</h2>
       <ul>
@@ -23,7 +35,12 @@ const GasPiping = () => {
       </ul>
 
       <h2>Importance</h2>
-      <p>Gas piping systems require careful design, installation, and maintenance to ensure safe and efficient operation. Properly designed and installed gas piping systems help prevent accidents, minimize risks, and optimize performance.</p>
+      <p>
+        Gas piping systems require careful design, installation, and maintenance
+        to ensure safe and efficient operation. Properly designed and installed
+        gas piping systems help prevent accidents, minimize risks, and optimize
+        performance.
+      </p>
     </div>
   );
 };

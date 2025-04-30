@@ -6,19 +6,29 @@ const GasFittings = () => {
     <div className="gas-fittings">
       <h1>Gas Fittings Supply & Installation</h1>
 
+      <div className="design-image-wrapper">
+        <img
+          src="/gasfittings.png"
+          alt="3D Mechanical Equipment"
+          className="design-machine-img"
+        />
+      </div>
+
       <p>
-        At <strong>Mexell Engineering</strong>, we specialize in the supply and installation
-        of high-quality <em>Gas Fittings</em> designed to support a wide range of industrial,
-        commercial, and institutional gas systems. Our fittings are engineered to ensure
-        safety, durability, and leak-free performance in critical applications involving
-        natural gas, LPG, nitrogen, oxygen, and other industrial gases.
+        At <strong>Mexell Engineering</strong>, we specialize in the supply and
+        installation of high-quality <em>Gas Fittings</em> designed to support a
+        wide range of industrial, commercial, and institutional gas systems. Our
+        fittings are engineered to ensure safety, durability, and leak-free
+        performance in critical applications involving natural gas, LPG,
+        nitrogen, oxygen, and other industrial gases.
       </p>
 
       <p>
-        We provide a complete portfolio of gas fittings, including valves, regulators,
-        connectors, couplings, nipples, elbows, and manifolds — available in stainless steel,
-        brass, carbon steel, and other compatible materials. All supplied components meet
-        national and international safety standards.
+        We provide a complete portfolio of gas fittings, including valves,
+        regulators, connectors, couplings, nipples, elbows, and manifolds —
+        available in stainless steel, brass, carbon steel, and other compatible
+        materials. All supplied components meet national and international
+        safety standards.
       </p>
 
       <p>
@@ -33,20 +43,20 @@ const GasFittings = () => {
       </ul>
 
       <p>
-        With a dedicated team of trained technicians and engineers, we ensure every gas
-        fitting is installed with precision, safety, and long-term performance in mind.
-        Whether it's a new facility or a system upgrade, we tailor our solutions to fit your
-        needs with minimum downtime.
+        With a dedicated team of trained technicians and engineers, we ensure
+        every gas fitting is installed with precision, safety, and long-term
+        performance in mind. Whether it's a new facility or a system upgrade, we
+        tailor our solutions to fit your needs with minimum downtime.
       </p>
 
       <p>
-        <strong>Industries Served:</strong> Pharmaceuticals, Chemical Plants, Food
-        Processing, Research Labs, Hospitals, and Industrial Manufacturing.
+        <strong>Industries Served:</strong> Pharmaceuticals, Chemical Plants,
+        Food Processing, Research Labs, Hospitals, and Industrial Manufacturing.
       </p>
 
       <p>
-        Partner with <strong>Mexell Engineering</strong> for gas fitting services that deliver
-        safety, reliability, and peace of mind.
+        Partner with <strong>Mexell Engineering</strong> for gas fitting
+        services that deliver safety, reliability, and peace of mind.
       </p>
     </div>
   );

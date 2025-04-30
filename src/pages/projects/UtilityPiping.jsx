@@ -7,6 +7,14 @@ const UtilityPiping = () => {
       <h1>Utility Piping</h1>
       <p>Utility piping refers to the network of pipes that distribute essential services, such as:</p>
 
+      <div className="design-image-wrapper">
+        <img
+          src="/utilitypiping.png"
+          alt="3D Mechanical Equipment"
+          className="design-machine-img"
+        />
+      </div>
+
       <h2>Types of Utility Piping</h2>
       <ul>
         <li>Water supply piping</li>
