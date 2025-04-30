@@ -23,6 +23,7 @@ import Dyepenetration from "./pages/services/Quality/Dyepenetration";
 import GasFittings from "./pages/services/Material/GasFittings";
 import ProcessPipingFittings from "./pages/services/Material/ProcessPipingFittings";
 import AboutUs from "./pages/AboutUs";
+import ProjectGallery from "./pages/projects/ProjectGallery";
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
           <Route path="/projects/gas-piping" element={<GasPiping />} />
           <Route path="/projects/utility-piping" element={<UtilityPiping />} />
           <Route path="/projects/ss-ms-fabrications" element={<SsmsFabrications />} />
+          <Route path="/projects/project-gallery" element={<ProjectGallery />} />
           {/* <Route path="/services" element={<ServicesPage />} /> */}
           <Route path="/services/quality" element={<QualityServices />} />
           <Route path="/services/quality/otbital" element={<Otbital />} />
