@@ -6,11 +6,14 @@ const clientList = [
   { name: "PhonePe", logo: "/logos/phonepe.png" },
   { name: "Syngene", logo: "/logos/syngene.png" },
   { name: "Tata Power", logo: "/logos/tatapower.png" },
-  { name: "Biocon", logo: "/logos/biocon.png" },
-  { name: "PhonePe", logo: "/logos/phonepe.png" },
-  { name: "Syngene", logo: "/logos/syngene.png" },
-  { name: "Tata Power", logo: "/logos/tatapower.png" },
-  { name: "Syngene", logo: "/logos/syngene.png" },
+  { name: "Dairy Day", logo: "/logos/dairyday.png" },
+  { name: "Givaudan", logo: "/logos/givaudan.png" },
+  { name: "Rinac", logo: "/logos/rinac.png" },
+  { name: "Strides", logo: "/logos/strides.png" },
+  { name: "Taegutac", logo: "/logos/taegutac.png" },
+  { name: "Techsol", logo: "/logos/techsol.png" },
+  { name: "Vestian", logo: "/logos/vestian.png" },
+  { name: "Wistron", logo: "/logos/Wistron.png" },
 ];
 
 const Clients = () => {
