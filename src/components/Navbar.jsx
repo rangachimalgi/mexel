@@ -8,6 +8,16 @@ const Navbar = () => {
   const [serviceDropdownOpen, setServiceDropdownOpen] = useState(false);
   const location = useLocation();
   const isHome = location.pathname === "/";
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     setServiceDropdownOpen(false);
@@ -16,7 +26,7 @@ const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <nav className={`navbar ${isHome ? "navbar-home" : "navbar-default"}`}>
+    <nav className={`navbar ${isHome ? "navbar-home" : "navbar-default"} ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-inner">
         <Link to="/" className="logo">
           <img

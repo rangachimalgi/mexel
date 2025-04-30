@@ -1,11 +1,11 @@
 .navbar {
   width: 100%;
-  background: transparent; /* 👈 transparent over hero image */
-  position: absolute; /* 👈 overlay hero */
+  background-color: #111; /* or transparent if over hero */
+  position: fixed;
   top: 0;
   z-index: 1000;
   color: white;
-  padding: 1rem 0;
+  padding: 0.6rem 0;
 }
 
 .navbar-inner {
@@ -64,20 +64,22 @@
 
 /* Default navbar for other pages */
 .navbar-default {
-  position: sticky;
-  top: 0;
   background-color: #111;
   color: white;
-  z-index: 1000;
 }
 
 /* Transparent navbar over hero section (home) */
 .navbar-home {
-  position: absolute;
+  position: fixed;
   top: 0;
   background: transparent;
+  transition: background 0.3s ease;
   color: white;
   z-index: 1000;
+}
+
+.navbar.scrolled {
+  background-color: #111; /* black when scrolling */
 }
 
 /* Sub-dropdown */
