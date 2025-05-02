@@ -4,9 +4,9 @@ import "./gasPiping.css"; // 👈 new css for this page
 const GasPiping = () => {
   return (
     <div className="gas-piping">
-      <h1>Gas Piping</h1>
+      <h1>Gas Piping/Tubing</h1>
       <p>
-        Gas piping refers to the network of pipes and fittings used to
+        Gas piping/Tubing refers to the network of pipes and fittings used to
         distribute and transport gases, such as industrial gases, in various
         settings, including:
       </p>
@@ -36,9 +36,9 @@ const GasPiping = () => {
 
       <h2>Importance</h2>
       <p>
-        Gas piping systems require careful design, installation, and maintenance
+        Gas piping/Tubing systems require careful design, installation, and maintenance
         to ensure safe and efficient operation. Properly designed and installed
-        gas piping systems help prevent accidents, minimize risks, and optimize
+        gas piping/Tubing systems help prevent accidents, minimize risks, and optimize
         performance.
       </p>
     </div>
