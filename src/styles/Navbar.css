@@ -64,8 +64,12 @@
 
 /* Default navbar for other pages */
 .navbar-default {
-  background-color: #111;
-  color: white;
+  background-color: #8cb5c5;
+  color: rgb(0, 0, 0);
+}
+
+.navbar-default a {
+  color: #111;
 }
 
 /* Transparent navbar over hero section (home) */
@@ -79,9 +83,13 @@
 }
 
 .navbar.scrolled {
-  background-color: #111; /* black when scrolling */
+  background-color: #8cb5c5;
+  color: #000000;
 }
 
+.navbar.scrolled a {
+  color: #000000;
+}
 /* Sub-dropdown */
 .dropdown-submenu {
   position: relative;
