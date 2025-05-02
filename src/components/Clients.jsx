@@ -10,7 +10,7 @@ const clientList = [
   { name: "Givaudan", logo: "/logos/givaudan.png" },
   { name: "Rinac", logo: "/logos/rinac.png" },
   { name: "Strides", logo: "/logos/strides.png" },
-  { name: "Taegutac", logo: "/logos/taegutac.png" },
+  { name: "Taegutac", logo: "/logos/taegutec.png" },
   { name: "Techsol", logo: "/logos/techsol.png" },
   { name: "Vestian", logo: "/logos/vestian.png" },
   { name: "Wistron", logo: "/logos/Wistron.png" },
