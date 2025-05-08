@@ -1,39 +1,71 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./surface.css";
+import PageLayout from "../../../components/PageLayout";
 
 const Surface = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
-    <div className="surface-roughness">
-      <h1>Surface Roughness Testing</h1>
+    <PageLayout fullWidth>
+      <div className="surface-wrapper">
 
-      <img
-        src="/Surfaceroughness.png"
-        alt="Surface Roughness Equipment"
-        className="surface-image"
-      />
+        {/* Hero */}
+        <div className="process-intro" data-aos="fade-up">
+          <div className="intro-image">
+            <img src="/Surfaceroughness.png" alt="Surface Roughness Equipment" />
+          </div>
+          <div className="intro-text">
+            <h1>SURFACE ROUGHNESS TESTING</h1>
+            <p>
+              In 2025, <strong>Mexell Engineering</strong> introduces{" "}
+              <em>Surface Roughness Testing</em> — a precision technique to evaluate
+              the texture and quality of critical surfaces with extreme accuracy.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        In 2025, <strong>Mexell Engineering</strong> proudly expands its capabilities by
-        introducing <em>Surface Roughness Testing</em>—a precision technique designed to
-        measure and evaluate the texture of surfaces with exceptional accuracy. This
-        advanced testing ensures compliance with stringent quality standards and enhances
-        the reliability and performance of components across various industries.
-      </p>
+        {/* What It Does */}
+        <div className="split-row" data-aos="fade-left">
+          <div className="split-left">
+            <h2>WHY IT MATTERS</h2>
+            <p>
+              This advanced test ensures surface finish meets stringent specifications,
+              minimizing friction, ensuring hygiene, and optimizing performance in
+              cleanroom, medical, and aerospace environments.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        With the integration of surface roughness testing, we are equipped to meet the
-        growing demand for meticulous quality control in sectors such as manufacturing,
-        aerospace, automotive, and medical devices. By adopting this cutting-edge
-        technology, <strong>Mexell Engineering</strong> reaffirms its commitment to
-        delivering high-performance solutions tailored to the unique needs of our clients.
-      </p>
+        {/* Industry Relevance */}
+        <div className="split-row" data-aos="fade-right">
+          <div className="split-right">
+            <h2>WHERE IT'S USED</h2>
+            <p>
+              Manufacturing, pharma, food-grade piping, and precision engineering all
+              depend on reliable surface integrity. This tech ensures your components
+              perform and last.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        At <strong>Mexell Engineering</strong>, quality and innovation remain at the heart
-        of our operations, and the addition of surface roughness testing exemplifies our
-        dedication to excellence in every project.
-      </p>
-    </div>
+        {/* Company Value */}
+        <div className="split-row" data-aos="fade-left">
+          <div className="split-left">
+            <h2>OUR STANDARD OF EXCELLENCE</h2>
+            <p>
+              Surface testing is another way <strong>Mexell</strong> ensures
+              world-class quality, helping clients exceed regulatory standards while
+              achieving consistent, dependable results.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </PageLayout>
   );
 };
 

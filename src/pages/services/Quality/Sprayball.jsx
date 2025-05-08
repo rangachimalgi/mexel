@@ -1,40 +1,72 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./sprayball.css";
+import PageLayout from "../../../components/PageLayout";
 
 const Sprayball = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
-    <div className="sprayball-testing">
-      <h1>Sprayball Testing</h1>
+    <PageLayout fullWidth>
+      <div className="sprayball-wrapper">
 
-      <img
-        src="/Sprayball.png"
-        alt="Sprayball Equipment"
-        className="sprayball-image"
-      />
+        {/* Hero Section */}
+        <div className="process-intro" data-aos="fade-up">
+          <div className="intro-image">
+            <img src="/Sprayball.png" alt="Sprayball Equipment" />
+          </div>
+          <div className="intro-text">
+            <h1>SPRAYBALL TESTING</h1>
+            <p>
+              In 2025, <strong>Mexell Engineering</strong> introduces{" "}
+              <em>Sprayball Testing</em> — a critical validation method used to
+              ensure spray systems achieve complete and effective cleaning inside
+              process equipment.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        In 2025, <strong>Mexell Engineering</strong> proudly incorporates{" "}
-        <em>Sprayball Testing</em> into its suite of advanced testing methods,
-        enhancing the cleaning validation and effectiveness of spray systems
-        used in critical applications. This testing technique ensures thorough
-        coverage and optimal cleaning performance, crucial for industries such
-        as pharmaceuticals, food processing, and biotechnology.
-      </p>
+        {/* What It Validates */}
+        <div className="split-row" data-aos="fade-left">
+          <div className="split-left">
+            <h2>VALIDATION PURPOSE</h2>
+            <p>
+              Sprayball testing is used in CIP (Clean-in-Place) systems to confirm
+              that every surface inside a tank or vessel receives uniform spray
+              coverage, meeting GMP cleaning standards.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        By adopting sprayball testing, <strong>Mexell Engineering</strong>{" "}
-        demonstrates its commitment to quality assurance and compliance with
-        stringent industry standards. This addition reinforces our ability to
-        deliver reliable, efficient, and innovative solutions tailored to meet
-        the specific needs of our clients.
-      </p>
+        {/* Applications */}
+        <div className="split-row" data-aos="fade-right">
+          <div className="split-right">
+            <h2>APPLICATION AREAS</h2>
+            <p>
+              Essential in pharmaceutical, biotech, and food processing industries,
+              where product safety and hygiene are non-negotiable — ensuring zero
+              contamination and optimal sanitation.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        At <strong>Mexell Engineering</strong>, embracing cutting-edge
-        technologies like sprayball testing reflects our dedication to driving
-        excellence and supporting the evolving demands of diverse industries.
-      </p>
-    </div>
+        {/* Why Mexell */}
+        <div className="split-row" data-aos="fade-left">
+          <div className="split-left">
+            <h2>MEXELL'S EDGE</h2>
+            <p>
+              By integrating sprayball testing, <strong>Mexell</strong> raises its
+              quality bar and empowers clients with cleaning validations that meet
+              the highest regulatory benchmarks.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </PageLayout>
   );
 };
 

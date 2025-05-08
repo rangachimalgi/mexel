@@ -1,25 +1,88 @@
-.process-piping-fittings {
-    max-width: 800px;
-    margin: 4rem auto;
-    padding: 0 2rem;
-    color: #333;
+.fittings-wrapper {
+  font-family: 'Poppins', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Split Layout */
+.split-row {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0;
+  padding: 0 1rem;
+}
+
+.split-left,
+.split-right {
+  max-width: 600px;
+  width: 100%;
+}
+
+.split-left {
+  align-self: flex-start;
+}
+
+.split-right {
+  align-self: flex-end;
+}
+
+.split-left h1,
+.split-left h2,
+.split-right h2 {
+  font-size: 2rem;
+  color: #d64027;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.split-left p,
+.split-right p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.split-left ul,
+.split-right ul {
+  list-style: disc inside;
+  font-size: 1.05rem;
+  color: #333;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.design-machine-img {
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-top: 1rem;
+}
+
+/* Animation */
+[data-aos] {
+  transition: all 0.8s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .split-left,
+  .split-right {
+    max-width: 100%;
   }
-  
-  .process-piping-fittings h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    color: #2c3e50;
+
+  .split-left h1,
+  .split-left h2,
+  .split-right h2 {
+    font-size: 1.6rem;
   }
-  
-  .process-piping-fittings p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+
+  .split-left p,
+  .split-right p,
+  .split-left ul,
+  .split-right ul {
+    font-size: 1rem;
   }
-  
-  .process-piping-fittings ul {
-    list-style: disc inside;
-    margin-bottom: 1.5rem;
-  }
-  
+}

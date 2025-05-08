@@ -1,39 +1,72 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./borescope.css";
+import PageLayout from "../../../components/PageLayout";
 
 const Borescope = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
-    <div className="borescope">
-      <h1>Borescope Technology</h1>
+    <PageLayout fullWidth>
+      <div className="borescope-wrapper">
 
-      <img
-        src="/Borescope.png"
-        alt="Borescope Equipment"
-        className="borescope-image"
-      />
+        {/* Hero */}
+        <div className="process-intro" data-aos="fade-up">
+          <div className="intro-image">
+            <img src="/Borescope.png" alt="Borescope Equipment" />
+          </div>
+          <div className="intro-text">
+            <h1>BORESCOPE TECHNOLOGY</h1>
+            <p>
+              In 2025, we proudly introduce <em>Borescope Technology</em> — a
+              game-changing inspection tool that allows us to visually examine
+              confined or hard-to-reach areas without disassembly.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        As a part of our continuous efforts to innovate and deliver enhanced inspection
-        solutions, we are proud to introduce <em>Borescope Technology</em> in 2025. This
-        advanced inspection tool allows for detailed visual examinations of hard-to-reach
-        or confined areas without the need for disassembly, ensuring accuracy and efficiency
-        in diagnostics.
-      </p>
+        {/* What It Does */}
+        <div className="split-row" data-aos="fade-left">
+          <div className="split-left">
+            <h2>ADVANCED VISUAL INSPECTION</h2>
+            <p>
+              This precision technology enables non-invasive inspections across
+              mechanical systems, ensuring fast diagnostics and minimal downtime.
+              It's ideal for industries where equipment integrity and performance
+              are critical.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        With the integration of borescope technology, we aim to <strong>revolutionize</strong>
-        inspection processes across industries such as manufacturing, construction,
-        aerospace, and energy. This development underscores our commitment to adopting
-        cutting-edge tools to <strong>optimize</strong> quality assurance, reduce downtime,
-        and provide the highest standards of service to our clients.
-      </p>
+        {/* Industries + Benefits */}
+        <div className="split-row" data-aos="fade-right">
+          <div className="split-right">
+            <h2>INDUSTRY APPLICATIONS</h2>
+            <p>
+              Borescope is revolutionizing inspection workflows in manufacturing,
+              construction, aerospace, and energy sectors — supporting safety
+              checks, maintenance planning, and accurate documentation.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        By embracing borescope technology, <strong>Mexell Engineering</strong> continues to
-        lead the way in offering innovative, cost-effective, and reliable engineering
-        solutions tailored to meet the evolving needs of our industry.
-      </p>
-    </div>
+        {/* Commitment */}
+        <div className="split-row" data-aos="fade-left">
+          <div className="split-left">
+            <h2>INNOVATION AT MEXELL</h2>
+            <p>
+              At <strong>Mexell Engineering</strong>, we’re always ahead of the
+              curve. By integrating borescope technology, we’re elevating our
+              ability to deliver accurate, reliable, and cost-effective
+              inspection and maintenance solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </PageLayout>
   );
 };
 

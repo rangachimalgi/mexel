@@ -1,35 +1,256 @@
+.process-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 4rem auto 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+
 .process-piping {
-    max-width: 800px;
-    margin: 4rem auto;
-    padding: 0 2rem;
-    color: #333;
+  display: block;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-image {
+  flex: 1 1 50%;
+}
+
+.hero-image img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+
+.hero-content {
+  flex: 1 1 50%;
+  color: #333;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: #d64027;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content ol {
+  padding-left: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.hero-content li {
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.hero-image, .hero-content {
+  min-width: 0;
+}
+
+.process-intro {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 4rem auto 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.intro-image {
+  flex: 1 1 45%;
+}
+
+.intro-image img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+  flex: 1 1 50%;
+}
+
+.intro-text h1 {
+  font-size: 2.4rem;
+  color: #d64027;
+  margin-bottom: 1rem;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.section-row {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin: 4rem auto;
+  padding: 2rem;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.section-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.section-text {
+  flex: 1 1 50%;
+}
+
+.section-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #d64027;
+}
+
+.section-text ul,
+.section-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.section-image {
+  flex: 1 1 50%;
+}
+
+.section-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
+  max-height: 350px;
+}
+
+.split-row {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 1rem 2rem;
+}
+
+.split-left {
+  align-self: flex-start;
+  max-width: 600px;
+}
+
+.split-right {
+  align-self: flex-end;
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.split-left h2 {
+  font-size: 2rem;
+  color: #d64027;
+  margin-bottom: 1rem;
+}
+
+.split-right h2 {
+  font-size: 2rem;
+  color: #d64027;
+  margin-bottom: 1rem;
+}
+
+.split-left ul {
+  list-style: disc inside;
+  padding-left: 0.5rem;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.split-right p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  text-align: left;
+}
+
+[data-aos] {
+  transition: all 0.8s ease;
+}
+
+.split-left h2,
+.split-right h2 {
+  font-weight: 600;
+  font-size: larger;
+  letter-spacing: -0.5px;
+}
+
+.split-left,
+.split-right {
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.split-left ol,
+.split-right ol {
+  list-style-type: decimal;
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.split-left li,
+.split-right li {
+  margin-bottom: 0.75rem;
+}
+
+.split-left p,
+.split-right p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+
+/* Existing styles assumed here... */
+
+@media (max-width: 768px) {
+  .split-row {
+    padding: 1.5rem 1rem;
   }
-  
-  .process-piping h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
+
+  .split-left,
+  .split-right {
+    max-width: 100%;
+    width: 100%;
   }
-  
-  .process-piping h2 {
-    margin-top: 2rem;
-    font-size: 1.8rem;
-    color: #2c3e50;
+
+  .split-left ul,
+  .split-right ul,
+  .split-left p,
+  .split-right p {
+    font-size: 1rem;
   }
-  
-  .process-piping p {
-    margin: 1rem 0;
-    font-size: 1.1rem;
-    line-height: 1.6;
+
+  .split-left h2,
+  .split-right h2 {
+    font-size: 1.7rem;
+    text-align: left;
   }
-  
-  .process-piping ul {
-    list-style: disc inside;
-    margin-top: 1rem;
-    padding-left: 1rem;
-  }
-  
-  .process-piping li {
-    margin: 0.5rem 0;
-  }
-  
+}

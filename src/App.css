@@ -6,8 +6,8 @@ body {
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
+  width: 98%;
+  max-width: none;
   margin: 0 auto;
 }
 
@@ -70,4 +70,13 @@ html, body, #root {
   flex: 1;
 }
 
+.full-width {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.page-section {
+  padding: 4rem 2rem;
+}
 

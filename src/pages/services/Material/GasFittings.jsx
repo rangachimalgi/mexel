@@ -1,64 +1,86 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./gasfittings.css";
+import PageLayout from "../../../components/PageLayout";
 
 const GasFittings = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
-    <div className="gas-fittings">
-      <h1>Gas Fittings Supply & Installation</h1>
+    <PageLayout fullWidth>
+      <div className="gasfitting-wrapper">
+        {/* Hero Section */}
+        <div className="split-row" data-aos="fade-up">
+          <div className="split-left">
+            <h1>Gas Fittings Supply & Installation</h1>
+            <p>
+              At <strong>Mexell Engineering</strong>, we specialize in the supply and installation of
+              high-quality <em>Gas Fittings</em> for industrial, commercial, and institutional needs.
+              Designed for safety, durability, and performance — our systems handle natural gas, LPG,
+              nitrogen, oxygen, and more.
+            </p>
+          </div>
+          <div className="split-right">
+            <img src="/gasfittings.png" alt="Gas Fittings" className="design-machine-img" />
+          </div>
+        </div>
 
-      <div className="design-image-wrapper">
-        <img
-          src="/gasfittings.png"
-          alt="3D Mechanical Equipment"
-          className="design-machine-img"
-        />
+        {/* Product Range */}
+        <div className="split-row" data-aos="fade-left">
+          <div className="split-left">
+            <h2>PRODUCT RANGE</h2>
+            <p>
+              Our fittings include valves, regulators, connectors, couplings, nipples, elbows,
+              and manifolds. Materials: stainless steel, brass, carbon steel — all compliant with
+              global safety codes.
+            </p>
+          </div>
+        </div>
+
+        {/* Installation Capabilities */}
+        <div className="split-row" data-aos="fade-right">
+          <div className="split-right">
+            <h2>INSTALLATION CAPABILITIES</h2>
+            <ul>
+              <li>High- and low-pressure line installations</li>
+              <li>On-site inspection and layout consultation</li>
+              <li>Integration with utility & piping systems</li>
+              <li>Testing, leak detection & commissioning</li>
+              <li>Compliance with IS, ASME, and local codes</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Why Mexell */}
+        <div className="split-row" data-aos="fade-left">
+          <div className="split-left">
+            <h2>WHY MEXELL?</h2>
+            <p>
+              Our skilled technicians ensure fittings are installed with precision and safety. Whether
+              it's a new facility or retrofit, our team minimizes downtime while maximizing performance.
+            </p>
+          </div>
+        </div>
+
+        {/* Industries */}
+        <div className="split-row" data-aos="fade-right">
+          <div className="split-right">
+            <h2>INDUSTRIES SERVED</h2>
+            <p>
+              Pharmaceuticals, Chemical Plants, Food Processing, Research Labs, Hospitals,
+              and Industrial Manufacturing.
+            </p>
+            <p>
+              Trust <strong>Mexell Engineering</strong> for gas fitting solutions that deliver safety,
+              reliability, and peace of mind.
+            </p>
+          </div>
+        </div>
       </div>
-
-      <p>
-        At <strong>Mexell Engineering</strong>, we specialize in the supply and
-        installation of high-quality <em>Gas Fittings</em> designed to support a
-        wide range of industrial, commercial, and institutional gas systems. Our
-        fittings are engineered to ensure safety, durability, and leak-free
-        performance in critical applications involving natural gas, LPG,
-        nitrogen, oxygen, and other industrial gases.
-      </p>
-
-      <p>
-        We provide a complete portfolio of gas fittings, including valves,
-        regulators, connectors, couplings, nipples, elbows, and manifolds —
-        available in stainless steel, brass, carbon steel, and other compatible
-        materials. All supplied components meet national and international
-        safety standards.
-      </p>
-
-      <p>
-        <strong>Our Installation Capabilities Include:</strong>
-      </p>
-      <ul>
-        <li>High-pressure and low-pressure gas line fitting installations</li>
-        <li>On-site inspection, routing, and system layout consultation</li>
-        <li>Seamless integration with piping and utility infrastructure</li>
-        <li>Testing, leak detection, and commissioning</li>
-        <li>Compliance with IS, ASME, and local safety codes</li>
-      </ul>
-
-      <p>
-        With a dedicated team of trained technicians and engineers, we ensure
-        every gas fitting is installed with precision, safety, and long-term
-        performance in mind. Whether it's a new facility or a system upgrade, we
-        tailor our solutions to fit your needs with minimum downtime.
-      </p>
-
-      <p>
-        <strong>Industries Served:</strong> Pharmaceuticals, Chemical Plants,
-        Food Processing, Research Labs, Hospitals, and Industrial Manufacturing.
-      </p>
-
-      <p>
-        Partner with <strong>Mexell Engineering</strong> for gas fitting
-        services that deliver safety, reliability, and peace of mind.
-      </p>
-    </div>
+    </PageLayout>
   );
 };
 

@@ -1,78 +1,101 @@
-import React from "react";
-import "./safetyServices.css"; // 👈 we'll create this CSS file
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./safetyServices.css";
+import PageLayout from "../../components/PageLayout";
 
 const SafetyServices = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
-    <div className="safety-services">
-      <h1>Safety Services</h1>
+    <PageLayout fullWidth>
+      <div className="safety-wrapper">
+        {/* Hero Image */}
+        <div className="process-intro" data-aos="fade-up">
+          <div className="intro-image">
+            <img src="/safetyservices.png" alt="Safety Equipment" />
+          </div>
+          <div className="intro-text">
+            <h1>SAFETY SERVICES</h1>
+            <p>
+              At <strong>Mexell Engineering</strong>, safety isn’t just a checklist — it’s a culture.
+              We offer comprehensive services that protect your team, reduce risk, and
+              ensure regulatory compliance across your sites.
+            </p>
+          </div>
+        </div>
 
-      <div className="design-image-wrapper">
-        <img
-          src="/safetyservices.png"
-          alt="3D Mechanical Equipment"
-          className="design-machine-img"
-        />
+        {/* Our Offerings */}
+        <div className="split-row" data-aos="fade-left">
+          <div className="split-left">
+            <h2>OUR OFFERINGS</h2>
+            <ul>
+              <li>
+                <strong>Site Safety Assessment:</strong> Conducting thorough assessments of client
+                sites to identify potential hazards and provide recommendations for improvement.
+              </li>
+              <li>
+                <strong>Safety Training:</strong> Providing training to clients on safe working
+                practices, equipment operation, and emergency procedures.
+              </li>
+              <li>
+                <strong>PPE Provision:</strong> Supplying personal protective equipment such as
+                hard hats, gloves, and safety glasses to ensure worker safety.
+              </li>
+              <li>
+                <strong>Safety Consulting:</strong> Offering expert advice on protocols and policies
+                to improve overall safety performance.
+              </li>
+              <li>
+                <strong>HIRA:</strong> Conducting Hazard Identification and Risk Assessments to
+                proactively detect risks and implement mitigation strategies.
+              </li>
+              <li>
+                <strong>Emergency Response Planning:</strong> Assisting in creating effective
+                emergency plans for fires, spills, and incidents.
+              </li>
+              <li>
+                <strong>Safety Audits & Inspections:</strong> Performing regular audits and
+                inspections to verify compliance and eliminate unsafe practices.
+              </li>
+              <li>
+                <strong>Safety Documentation:</strong> Providing manuals, safety policies,
+                and standard operating procedures for a safer workplace.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Benefits */}
+        <div className="split-row" data-aos="fade-right">
+          <div className="split-right">
+            <h2>BENEFITS</h2>
+            <ul>
+              <li>Reduce the risk of accidents and injuries</li>
+              <li>Improve compliance with safety regulations and standards</li>
+              <li>Enhance your overall safety culture</li>
+              <li>Increase productivity and operational efficiency</li>
+              <li>Lower costs related to workplace incidents</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Importance */}
+        <div className="split-row" data-aos="fade-left">
+          <div className="split-left">
+            <h2>IMPORTANCE</h2>
+            <p>
+              Safety services are essential in the fabrication industry, where workers face
+              exposure to hazardous materials, machinery, and environments. By prioritizing
+              safety, companies can protect their workforce, reduce liabilities, and build a
+              reputation for operational excellence.
+            </p>
+          </div>
+        </div>
       </div>
-
-      <h2>Our Offerings</h2>
-      <ul>
-        <li>
-          Site Safety Assessment: Conducting thorough assessments of client
-          sites to identify potential hazards and provide recommendations for
-          improvement.
-        </li>
-        <li>
-          Safety Training: Providing training to clients on safe working
-          practices, equipment operation, and emergency procedures.
-        </li>
-        <li>
-          Personal Protective Equipment (PPE) Provision: Supplying PPE to
-          clients, such as hard hats, gloves, and safety glasses, to ensure
-          workers are properly protected.
-        </li>
-        <li>
-          Safety Consulting: Offering expert advice on safety protocols,
-          procedures, and policies to help clients improve their overall safety
-          performance.
-        </li>
-        <li>
-          Hazard Identification and Risk Assessment (HIRA): Conducting HIRAs to
-          identify potential hazards and develop strategies to mitigate risks.
-        </li>
-        <li>
-          Emergency Response Planning: Assisting clients in developing emergency
-          response plans, including procedures for fires, spills, and other
-          incidents.
-        </li>
-        <li>
-          Safety Audits and Inspections: Conducting regular safety audits and
-          inspections to ensure compliance with safety regulations and
-          standards.
-        </li>
-        <li>
-          Safety Documentation: Providing safety documentation, such as safety
-          manuals, policies, and procedures, to help clients maintain a safe
-          working environment.
-        </li>
-      </ul>
-
-      <h2>Benefits</h2>
-      <ul>
-        <li>Reduce the risk of accidents and injuries</li>
-        <li>Improve compliance with safety regulations and standards</li>
-        <li>Enhance their overall safety culture</li>
-        <li>Increase productivity and efficiency</li>
-        <li>Reduce costs associated with accidents and injuries</li>
-      </ul>
-
-      <h2>Importance</h2>
-      <p>
-        Safety services are essential in the fabrication industry, where workers
-        are often exposed to hazardous materials, equipment, and environments.
-        By prioritizing safety, fabrication companies can demonstrate their
-        commitment to protecting their clients' workers and assets.
-      </p>
-    </div>
+    </PageLayout>
   );
 };
 

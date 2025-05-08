@@ -1,9 +1,10 @@
 import React from "react";
 import "./aboutus.css";
+import PageLayout from "../components/PageLayout";
 
 const AboutUs = () => {
   return (
-    <div className="about-page">
+    <PageLayout fullWidth>
       <h1>About Mexell Engineering</h1>
 
       <p>
@@ -178,66 +179,68 @@ const AboutUs = () => {
       </section>
 
       <section className="timeline-wrapper">
-  <h2>Our Journey</h2>
-  <div className="timeline-container">
+        <h2>Our Journey</h2>
+        <div className="timeline-container">
+          {/* 2025 */}
+          <div className="timeline-block right">
+            <div className="content">
+              <h3>2025 – Overwhelmed with Progress</h3>
+              <p>
+                Introduced advanced services like Orbital Welding, Borescope,
+                Passivation, Pressure Testing, Liquid Penetration Testing, Spray
+                Ball Testing, Surface Roughness & Ultrasonic Testing. Marked a
+                leap in innovation and capability.
+              </p>
+            </div>
+          </div>
 
-    {/* 2025 */}
-    <div className="timeline-block right">
-      <div className="content">
-        <h3>2025 – Overwhelmed with Progress</h3>
-        <p>
-          Introduced advanced services like Orbital Welding, Borescope, Passivation,
-          Pressure Testing, Liquid Penetration Testing, Spray Ball Testing,
-          Surface Roughness & Ultrasonic Testing. Marked a leap in innovation and capability.
-        </p>
-      </div>
-    </div>
+          {/* 2024 */}
+          <div className="timeline-block left">
+            <div className="content">
+              <h3>2024 – Boundless Growth</h3>
+              <p>
+                Completed major projects and shutdowns. Worked with Biocon
+                Biologics, Givaudan India, Rinac India, Bhagmane Tech Park, and
+                more.
+              </p>
+            </div>
+          </div>
 
-    {/* 2024 */}
-    <div className="timeline-block left">
-      <div className="content">
-        <h3>2024 – Boundless Growth</h3>
-        <p>
-          Completed major projects and shutdowns. Worked with Biocon Biologics,
-          Givaudan India, Rinac India, Bhagmane Tech Park, and more.
-        </p>
-      </div>
-    </div>
+          {/* 2023 */}
+          <div className="timeline-block right">
+            <div className="content">
+              <h3>2023 – New Ventures</h3>
+              <p>
+                Took proactive steps to reach new clients. Delivered exceptional
+                satisfaction and expanded reach.
+              </p>
+            </div>
+          </div>
 
-    {/* 2023 */}
-    <div className="timeline-block right">
-      <div className="content">
-        <h3>2023 – New Ventures</h3>
-        <p>
-          Took proactive steps to reach new clients. Delivered exceptional satisfaction and expanded reach.
-        </p>
-      </div>
-    </div>
+          {/* 2022 */}
+          <div className="timeline-block left">
+            <div className="content">
+              <h3>2022 – Resilience</h3>
+              <p>
+                Faced ups and downs while laying a stronger foundation. Clients’
+                trust helped us stabilize and spread our wings.
+              </p>
+            </div>
+          </div>
 
-    {/* 2022 */}
-    <div className="timeline-block left">
-      <div className="content">
-        <h3>2022 – Resilience</h3>
-        <p>
-          Faced ups and downs while laying a stronger foundation. Clients’ trust helped us stabilize and spread our wings.
-        </p>
-      </div>
-    </div>
-
-    {/* 2021 */}
-    <div className="timeline-block right">
-      <div className="content">
-        <h3>2021 – Bold Beginnings</h3>
-        <p>
-          Founded with determination. Faced challenges head-on. Grateful to supporters who helped us rise.
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-    </div>
+          {/* 2021 */}
+          <div className="timeline-block right">
+            <div className="content">
+              <h3>2021 – Bold Beginnings</h3>
+              <p>
+                Founded with determination. Faced challenges head-on. Grateful
+                to supporters who helped us rise.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </PageLayout>
   );
 };
 

@@ -1,39 +1,71 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./dyepenetration.css";
+import PageLayout from "../../../components/PageLayout";
 
 const Dyepenetration = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
-    <div className="dye-penetration">
-      <h1>Dye Penetration Testing</h1>
+    <PageLayout fullWidth>
+      <div className="dyepenetration-wrapper">
 
-      <img
-        src="/Dyepenetration.png"
-        alt="Dyepenetration Equipment"
-        className="dyepenetration-image"
-      />
+        {/* Hero Section */}
+        <div className="process-intro" data-aos="fade-up">
+          <div className="intro-image">
+            <img src="/Dyepenetration.png" alt="Dye Penetration Equipment" />
+          </div>
+          <div className="intro-text">
+            <h1>DYE PENETRATION TESTING</h1>
+            <p>
+              In 2025, <strong>Mexell Engineering</strong> introduces{" "}
+              <em>Dye Penetration Testing</em> — a precise non-destructive technique
+              to detect surface-breaking defects like cracks, porosity, and leaks.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        In 2025, <strong>Mexell Engineering</strong> is proud to enhance its quality
-        assurance capabilities by introducing <em>Dye Penetration Testing</em>, a
-        non-destructive evaluation technique that identifies surface flaws such as cracks,
-        porosity, and leaks with exceptional accuracy. This method is highly effective for
-        detecting imperfections in welds, castings, and other critical components.
-      </p>
+        {/* Flaw Detection */}
+        <div className="split-row" data-aos="fade-left">
+          <div className="split-left">
+            <h2>FINDING CRITICAL FLAWS</h2>
+            <p>
+              This method uses a visible or fluorescent dye to highlight surface
+              imperfections that could compromise strength, pressure tolerance, or
+              safety — especially in welds and castings.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        The inclusion of dye penetration testing strengthens our ability to deliver reliable
-        and safe solutions across industries such as Food, Pharmaceutical, and Construction.
-        By adopting this advanced testing method, <strong>Mexell Engineering</strong> reaffirms
-        its commitment to meeting stringent industry standards while ensuring the highest level
-        of quality and precision.
-      </p>
+        {/* Application Sectors */}
+        <div className="split-row" data-aos="fade-right">
+          <div className="split-right">
+            <h2>INDUSTRY APPLICATION</h2>
+            <p>
+              Commonly used in food, pharmaceutical, biotech, and construction
+              sectors to ensure sanitary weld integrity, leak-proof performance, and
+              adherence to strict compliance regulations.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        At <strong>Mexell Engineering</strong>, innovation is at the core of our operations,
-        and the addition of dye penetration testing reflects our unwavering dedication to
-        excellence and customer satisfaction.
-      </p>
-    </div>
+        {/* Why Mexell */}
+        <div className="split-row" data-aos="fade-left">
+          <div className="split-left">
+            <h2>TRUSTED PRECISION</h2>
+            <p>
+              <strong>Mexell Engineering</strong> adds dye penetration testing to
+              ensure the highest quality output — delivering excellence, safety,
+              and complete confidence in every job.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </PageLayout>
   );
 };
 

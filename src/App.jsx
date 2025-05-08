@@ -23,6 +23,8 @@ import GasFittings from "./pages/services/Material/GasFittings";
 import ProcessPipingFittings from "./pages/services/Material/ProcessPipingFittings";
 import AboutUs from "./pages/AboutUs";
 import ProjectGallery from "./pages/projects/ProjectGallery";
+import WhatsAppButton from "./components/WhatsAppButton";
+import ContactUs from "./pages/ContactUs";
 
 const App = () => {
   return (
@@ -33,6 +35,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/contact" element={<ContactUs />} />
           <Route path="/projects/process-piping" element={<ProcessPiping />} />
           <Route path="/projects/gas-piping" element={<GasPiping />} />
           <Route path="/projects/utility-piping" element={<UtilityPiping />} />
@@ -55,6 +58,7 @@ const App = () => {
         </Routes>
       </div>
       <Footer />
+      <WhatsAppButton />
     </div>
   </Router>
   );

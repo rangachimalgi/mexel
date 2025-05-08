@@ -1,41 +1,72 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./pressure.css";
+import PageLayout from "../../../components/PageLayout";
 
 const Pressure = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
-    <div className="pressure-testing">
-      <h1>Pressure Testing</h1>
+    <PageLayout fullWidth>
+      <div className="pressure-wrapper">
 
-      <img
-        src="/Pressuretesting.png"
-        alt="Pressure Equipment"
-        className="pressure-image"
-      />
+        {/* Intro */}
+        <div className="process-intro" data-aos="fade-up">
+          <div className="intro-image">
+            <img src="/Pressuretesting.png" alt="Pressure Equipment" />
+          </div>
+          <div className="intro-text">
+            <h1>PRESSURE TESTING</h1>
+            <p>
+              In 2025, <strong>Mexell Engineering</strong> takes another leap
+              forward with <em>Pressure Testing</em>—a crucial method for
+              evaluating system strength, leak tightness, and safety.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        In 2025, <strong>Mexell Engineering</strong> takes another leap forward
-        by introducing <em>Pressure Testing</em>—a vital technique to ensure the
-        integrity, safety, and durability of critical systems and components.
-        This advanced testing method will allow us to assess pressure resistance
-        and detect potential leaks or weaknesses across various applications,
-        meeting the highest industry standards.
-      </p>
+        {/* Section 1 */}
+        <div className="split-row" data-aos="fade-left">
+          <div className="split-left">
+            <h2>WHY PRESSURE TEST?</h2>
+            <p>
+              This advanced test verifies pressure resistance and helps identify
+              flaws or leakage points across pipelines, tanks, vessels, and
+              sealed systems — giving you total peace of mind.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        The adoption of pressure testing expands our capabilities in industries
-        like manufacturing, construction, energy, and infrastructure
-        development. By incorporating this technology, we aim to deliver
-        superior performance, reduce risks, and enhance the reliability of
-        systems, ensuring our clients' needs are met with precision and
-        professionalism.
-      </p>
+        {/* Section 2 */}
+        <div className="split-row" data-aos="fade-right">
+          <div className="split-right">
+            <h2>INDUSTRY COVERAGE</h2>
+            <p>
+              Pressure testing enhances reliability in industries like
+              manufacturing, energy, construction, and infrastructure. We ensure
+              compliance with safety standards while optimizing performance and
+              lifecycle.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        At <strong>Mexell Engineering</strong>, innovation is our driving force,
-        and the addition of pressure testing reflects our commitment to setting
-        new benchmarks in quality assurance and engineering excellence.
-      </p>
-    </div>
+        {/* Section 3 */}
+        <div className="split-row" data-aos="fade-left">
+          <div className="split-left">
+            <h2>MEXELL'S PROMISE</h2>
+            <p>
+              At <strong>Mexell Engineering</strong>, pressure testing is more
+              than a service — it’s part of our pursuit of engineering
+              excellence, safety assurance, and continuous innovation for our
+              clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </PageLayout>
   );
 };
 

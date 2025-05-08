@@ -26,7 +26,11 @@ const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <nav className={`navbar ${isHome ? "navbar-home" : "navbar-default"} ${scrolled ? "scrolled" : ""}`}>
+    <nav
+      className={`navbar ${isHome ? "navbar-home" : "navbar-default"} ${
+        scrolled ? "scrolled" : ""
+      }`}
+    >
       <div className="navbar-inner">
         <Link to="/" className="logo">
           <img
@@ -169,11 +173,7 @@ const Navbar = () => {
           </li>
 
           <li>
-            {isHome ? (
-              <a href="#contact">Contact Us</a>
-            ) : (
-              <Link to="/#contact">Contact Us</Link>
-            )}
+            <Link to="/contact">Contact Us</Link>
           </li>
         </ul>
       </div>

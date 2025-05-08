@@ -1,39 +1,71 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./ultrasonic.css";
+import PageLayout from "../../../components/PageLayout";
 
 const Ultrasonic = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
-    <div className="ultrasonic-testing">
-      <h1>Ultrasonic Testing</h1>
+    <PageLayout fullWidth>
+      <div className="ultrasonic-wrapper">
 
-      <img
-        src="/Ultrasonic.png"
-        alt="Ultrasonic Equipment"
-        className="ultrasonic-image"
-      />
+        {/* Hero Section */}
+        <div className="process-intro" data-aos="fade-up">
+          <div className="intro-image">
+            <img src="/Ultrasonic.png" alt="Ultrasonic Equipment" />
+          </div>
+          <div className="intro-text">
+            <h1>ULTRASONIC TESTING</h1>
+            <p>
+              In 2025, <strong>Mexell Engineering</strong> elevates quality control
+              with <em>Ultrasonic Testing</em> — a non-destructive method using high-frequency
+              sound waves to identify internal flaws and material inconsistencies.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        In 2025, <strong>Mexell Engineering</strong> proudly enhances its capabilities by
-        introducing <em>Ultrasonic Testing</em>, a non-destructive testing method that uses
-        high-frequency sound waves to detect flaws, measure thickness, and evaluate material
-        properties with exceptional precision. This advanced technology ensures compliance
-        with industry standards while maintaining the integrity of components.
-      </p>
+        {/* Accuracy & Detection */}
+        <div className="split-row" data-aos="fade-left">
+          <div className="split-left">
+            <h2>ACCURACY & DETECTION</h2>
+            <p>
+              Ultrasonic testing enables highly precise evaluations — detecting
+              internal cracks, wall thinning, or material delamination without
+              damaging the part or structure.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        The adoption of ultrasonic testing positions <strong>Mexell Engineering</strong> as a
-        leader in quality assurance, catering to industries such as aerospace, automotive,
-        construction, and energy. By utilizing this cutting-edge method, we aim to provide
-        accurate results, optimize safety, and support the development of reliable solutions
-        for our clients.
-      </p>
+        {/* Industry Use */}
+        <div className="split-row" data-aos="fade-right">
+          <div className="split-right">
+            <h2>USED IN INDUSTRIES</h2>
+            <p>
+              From aerospace and automotive to oil & gas and structural
+              engineering, ultrasonic testing ensures performance, safety, and
+              full regulatory compliance.
+            </p>
+          </div>
+        </div>
 
-      <p>
-        At <strong>Mexell Engineering</strong>, innovation drives us forward, and the addition
-        of ultrasonic testing exemplifies our commitment to pioneering excellence and meeting
-        evolving client demands.
-      </p>
-    </div>
+        {/* Why Mexell */}
+        <div className="split-row" data-aos="fade-left">
+          <div className="split-left">
+            <h2>WHY MEXELL?</h2>
+            <p>
+              With this technology, <strong>Mexell Engineering</strong> pushes
+              the boundaries of quality assurance — delivering unmatched results
+              through innovation, skill, and attention to detail.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </PageLayout>
   );
 };
 
