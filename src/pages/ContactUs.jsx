@@ -63,19 +63,39 @@ const ContactUs = () => {
               <em>Follow us:</em>
             </p>
             <div className="icons">
-              <a href="#">
+              <a
+                href="https://linkedin.com/company/mexell"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedin />
               </a>
-              <a href="#">
+              <a
+                href="https://twitter.com/mexell"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter />
               </a>
-              <a href="#">
+              <a
+                href="https://instagram.com/mexell"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram />
               </a>
-              <a href="#">
+              <a
+                href="https://facebook.com/mexell"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebook />
               </a>
-              <a href="#">
+              <a
+                href="https://youtube.com/@mexell"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaYoutube />
               </a>
             </div>
