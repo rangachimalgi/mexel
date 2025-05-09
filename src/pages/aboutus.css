@@ -106,6 +106,40 @@
   .timeline-block.right::before {
     left: -9px;
   }
+
+  .about-centered-content {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+  }
+  
+  .about-centered-content h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding-bottom: 3px;
+  }
+  
+  .about-centered-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.75;
+    text-align: justify;
+  }
+  
+  .about-centered-content ul {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+  }
+  
+  .about-centered-content ul li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+  }
+  
   
   /* Responsive Fix */
   @media screen and (max-width: 768px) {

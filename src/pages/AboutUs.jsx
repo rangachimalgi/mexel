@@ -1,77 +1,65 @@
 import React from "react";
 import "./aboutus.css";
 import PageLayout from "../components/PageLayout";
+import heroBg from "../assets/hero.png";
 
 const AboutUs = () => {
   return (
-    <PageLayout fullWidth>
-      <h1>About Mexell Engineering</h1>
+    <PageLayout>
+      <div
+        style={{
+          backgroundImage: `url(${heroBg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          height: "500px", // ⬆️ Increased height
+          width: "80%", // ⬇️ Reduced width (adjust as needed)
+          borderRadius: "20px", // ⬅️ Curvy edges
+          margin: "2rem auto", // ⬅️ Centered the card
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          boxShadow: "0 6px 16px rgba(0,0,0,0.2)", // optional for card feel
+        }}
+      >
+        <img
+          src="/mexell-logo.png"
+          alt="Mexell Logo"
+          style={{
+            height: "80px",
+            opacity: 0.9,
+          }}
+        />
+      </div>
 
-      <p>
-        <strong>Founded in 2021</strong> by industry veterans Mahesh Jadhav and
-        Somashekara,
-        <strong> Mexell Engineering</strong> is a dynamic fabrication company
-        specializing in process piping, utility piping, and gas piping
-        solutions.
-      </p>
+      <div className="about-centered-content">
+        <h3>About Us</h3>
+        <p>
+          <strong>Founded in 2021</strong> by industry veterans Mahesh Jadhav
+          and Somashekara, <strong>Mexell Engineering</strong> is a dynamic
+          fabrication company specializing in process piping, utility piping,
+          and gas piping solutions.
+        </p>
+        <p>
+          With over two decades of hands-on experience, the founders have
+          navigated and resolved various piping challenges, establishing Mexell
+          Engineering as a trusted name in the industry.
+        </p>
+        <p>
+          <strong>Mexell Engineering</strong> has achieved remarkable growth,
+          expanding to <strong>35 dedicated professionals</strong> including
+          safety and quality teams committed to the highest standards.
+        </p>
+        <p>
+          In 2025, we expanded to a <strong>2,500 sq. ft. facility</strong> to
+          support operations, innovation, and collaboration.
+        </p>
+        <p>
+          We continue to deliver forward-thinking, reliable solutions across the
+          industrial spectrum.
+        </p>
 
-      <p>
-        With over two decades of hands-on experience, the founders have
-        navigated and resolved various piping challenges, establishing Mexell
-        Engineering as a trusted name in the industry.
-      </p>
-
-      <p>
-        Year by year, <strong>Mexell Engineering</strong> has achieved
-        remarkable growth, built upon a foundation of expertise and commitment
-        to excellence. As of today, our team has expanded to{" "}
-        <strong>35 dedicated professionals</strong>, including specialized
-        safety and quality teams, ensuring the highest standards in every
-        project we undertake.
-      </p>
-
-      <p>
-        In 2025, to support our growing operations and enhance workability, we
-        expanded our working space to a sprawling{" "}
-        <strong>2,500 square feet</strong>. This strategic development reflects
-        our focus on delivering innovative and efficient solutions while
-        fostering a collaborative environment for our skilled workforce.
-      </p>
-
-      <p>
-        <strong>Mexell Engineering</strong> remains steadfast in its mission to
-        address complex piping needs with precision, reliability, and
-        forward-thinking solutions — cementing our position as a leader in the
-        fabrication industry.
-      </p>
-
-      <p>
-        <strong>Founded in 2021</strong> by industry veterans Mahesh Jadhav and
-        Somashekara,
-        <strong> Mexell Engineering</strong> is a dynamic fabrication company
-        specializing in process piping, utility piping, and gas piping
-        solutions.
-      </p>
-      <p>
-        With over two decades of hands-on experience, the founders have
-        navigated and resolved various piping challenges, establishing Mexell
-        Engineering as a trusted name in the industry.
-      </p>
-      <p>
-        Our team has expanded to <strong>35+ professionals</strong>, including
-        safety and quality teams. In 2025, we moved into a{" "}
-        <strong>2,500 sq. ft. facility</strong> to support operations,
-        innovation, and collaboration.
-      </p>
-      <p>
-        <strong>Mexell Engineering</strong> is committed to delivering
-        forward-thinking, reliable solutions across the industrial spectrum.
-      </p>
-
-      {/* ✅ NEW Company Overview Section */}
-      <section className="company-overview">
-        <h2>Company Overview</h2>
-
+        <h3>Company Overview</h3>
         <p>
           <strong>
             Piping Solutions — Empowering Excellence Through Innovation and
@@ -102,9 +90,8 @@ const AboutUs = () => {
             capabilities
           </li>
           <li>
-            <strong>2024:</strong> Delivered major projects for Biocon
-            Biologics, Taegu Tech, Givaudan India, Rinac India, and Bhagmane
-            Tech Park
+            <strong>2024:</strong> Delivered major projects for Biocon,
+            Givaudan, Rinac India, and more
           </li>
         </ul>
 
@@ -128,10 +115,9 @@ const AboutUs = () => {
 
         <h3>Our Team</h3>
         <p>
-          Founded in July 2021, our team is driven by hard work and innovation.
-          Led by
-          <strong> Mahesh Jadhav</strong>, we specialize in technical services
-          and advanced quality checks.
+          <strong>Founded in July 2021</strong>, our team is driven by hard work
+          and innovation. Led by <strong>Mahesh Jadhav</strong>, we specialize
+          in technical services and advanced quality checks.
         </p>
         <ul>
           <li>
@@ -147,20 +133,17 @@ const AboutUs = () => {
             coordination
           </li>
           <li>
-            <strong>Support Staff:</strong> Providing smooth backend operations
-            and customer service
+            <strong>Support Staff:</strong> Ensuring smooth backend operations
+            and service
           </li>
         </ul>
-        <p>
-          We work as one team, sharing knowledge and aligning every solution to
-          client goals.
-        </p>
+        <p>We work as one team, aligning every solution to client goals.</p>
 
         <h3>Quality Engineering Initiative</h3>
         <p>
-          We're proud to launch our dedicated{" "}
+          We proudly launched a dedicated{" "}
           <strong>Quality Engineering Team</strong> focused on GMP-compliant
-          services. Our offerings include:
+          services.
         </p>
         <ul>
           <li>Orbital Welding</li>
@@ -173,10 +156,10 @@ const AboutUs = () => {
           <li>Ultrasonic Testing & Commissioning</li>
         </ul>
         <p>
-          This initiative reflects our passion for innovation and continuous
-          improvement in quality and service delivery.
+          This initiative reflects our commitment to innovation and continual
+          quality improvement.
         </p>
-      </section>
+      </div>
 
       <section className="timeline-wrapper">
         <h2>Our Journey</h2>
