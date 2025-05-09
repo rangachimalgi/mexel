@@ -1,106 +1,50 @@
-.about-section {
-  padding: 4rem 1.5rem;
-  background-color: #fff;
+.expertise-section {
+  padding: 4rem 1rem;
+  background: #fff;
+  text-align: center;
 }
 
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5rem;
+.expertise-container {
   max-width: 1200px;
   margin: 0 auto;
-  align-items: center;
 }
 
-.about-image {
-  flex: 1 1 400px;
-  position: relative;
-}
-
-.about-image img {
-  width: 100%;
-  border-radius: 14px;
-  object-fit: cover;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-}
-
-.about-highlight {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background: rgba(17, 17, 17, 0.85);
-  color: white;
-  padding: 1rem 1.25rem;
-  font-weight: 600;
-  border-radius: 10px;
-  max-width: 85%;
-  font-size: 1rem;
-  backdrop-filter: blur(4px);
-}
-
-.about-content {
-  flex: 1 1 400px;
-}
-
-.about-label {
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  color: #888;
-  letter-spacing: 1.5px;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.about-content h2 {
-  font-size: 2.2rem;
-  margin: 1rem 0;
-  color: #1a1a1a;
-  line-height: 1.3;
-}
-
-.about-content p {
-  color: #555;
-  line-height: 1.7;
-  font-size: 1.05rem;
-  margin-bottom: 1.2rem;
-}
-
-.about-points {
-  list-style: none;
-  padding: 0;
-  margin: 2rem 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-}
-
-.about-points li {
-  padding: 1rem 0;
-  font-weight: 500;
-  color: #333;
-  display: flex;
-  gap: 0.75rem;
-  align-items: flex-start;
-}
-
-.about-points li::before {
-  content: "•";
+.expertise-container h2 {
+  font-size: 2.5rem;
   color: #d64027;
+  margin-bottom: 3rem;
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.expertise-card {
+  background: #f8f8f8;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding: 0;
+}
+
+.expertise-card:hover {
+  transform: translateY(-6px);
+}
+
+.expertise-card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+.expertise-card h3 {
   font-size: 1.2rem;
-  line-height: 1.2;
-}
-
-.about-btn {
-  background: #d64027;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 1.5rem;
-  font-weight: 600;
-  transition: background 0.3s ease;
-}
-
-.about-btn:hover {
-  background: #bb2f1a;
+  color: #333;
+  padding: 1rem;
+  margin: 0;
 }
