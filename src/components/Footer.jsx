@@ -30,30 +30,17 @@ const Footer = () => {
       <div className="footer-section">
         <h4>COMMUNITY</h4>
         <div className="social-icons">
-          <button onClick={() => handleClick()}>X</button>
           <a href="https://x.com" target="_blank" rel="noopener noreferrer">
-            X
+            <FaXTwitter />
           </a>
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Facebook
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <FaFacebookF />
           </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instagram
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
           </a>
-          <a
-            href="https://youtube.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            YouTube
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <FaYoutube />
           </a>
         </div>
       </div>
