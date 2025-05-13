@@ -2,8 +2,6 @@ import React from "react";
 import "./aboutus.css";
 import PageLayout from "../components/PageLayout";
 import heroBg from "../assets/hero.png";
-import pipeImg from "../assets/pipe.jpeg";
-import welderImg from "../assets/welder.jpeg";
 
 const AboutUs = () => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
 import "./aboutus.css"; // reuse same styles
 import PageLayout from "../components/PageLayout";
-import pipeImg from "../assets/pipe.jpeg";
-import welderImg from "../assets/welder.jpeg";
+import pipeImg from "../assets/pipe.png" 
+import welderImg from "../assets/welder.png"
 
 const OurJourney = () => {
   return (
