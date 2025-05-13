@@ -57,6 +57,12 @@ const Navbar = () => {
             </Link>
           </li>
 
+          <li>
+            <Link to="/ourjourney" onClick={() => setMenuOpen(false)}>
+              Our Journey
+            </Link>
+          </li>
+
           {/* Our Projects Dropdown */}
           <li
             className="dropdown"

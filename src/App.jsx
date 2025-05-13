@@ -25,6 +25,7 @@ import AboutUs from "./pages/AboutUs";
 import ProjectGallery from "./pages/projects/ProjectGallery";
 import WhatsAppButton from "./components/WhatsAppButton";
 import ContactUs from "./pages/ContactUs";
+import OurJourney from "./pages/OurJourney";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          < Route path="ourjourney" element={<OurJourney />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/projects/process-piping" element={<ProcessPiping />} />
           <Route path="/projects/gas-piping" element={<GasPiping />} />
