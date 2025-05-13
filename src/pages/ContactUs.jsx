@@ -23,41 +23,37 @@ const ContactUs = () => {
         {/* Google Map */}
         <div className="contact-map" data-aos="fade-up">
           <iframe
-            title="Mexell Engineering Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.2415058359444!2d77.64697921538433!3d12.800032521818372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c897d9a1a17%3A0x45eb2dc5447b418!2sSPECDEL%20Engineering%20Private%20Limited!5e0!3m2!1sen!2sin!4v1681742342342!5m2!1sen!2sin"
+            title="Mexell Engineering Exact Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0837275749056!2d77.665451!3d12.818246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6d16eed4456f%3A0xea75f2ae7655c203!2sMEXELL%20ENGINEERING!5e0!3m2!1sen!2sin!4v1715604021135!5m2!1sen!2sin"
             width="100%"
             height="400"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          />
         </div>
 
         {/* Text Section */}
         <div className="split-row" data-aos="fade-left">
           <div className="split-left">
-            <h2>OFFICE ADDRESS</h2>
+            <h1>OFFICE ADDRESS</h1>
             <p>
               <strong>MEXELL Engineering Private Limited</strong>
             </p>
             <p>
-              Plot No. 240 & 241, KIADB Industrial area,
+              #12/6, Neotown Rd, Opp. Govt School,
               <br />
-              Bommasandra Jigani Link Road,
-              <br />
-              Bengaluru – 562106
-              <br />
-              Karnataka, India
+              Bommasandra, Bangalore 560099
             </p>
             <p>
-              <strong>Phone:</strong> +91 90352 13861 (Shilpa)
+              <strong>Phone:</strong> +91 96639 10215
             </p>
             <p>
-              <strong>Whatsapp:</strong> +91 90352 13862 (Arun)
+              <strong>Whatsapp:</strong> +91 98457 04566
             </p>
             <p>
-              <strong>Email:</strong> sales@mexell.com
+              <strong>Email:</strong> mexellengineering@gmail.com
             </p>
             <p>
               <em>Follow us:</em>

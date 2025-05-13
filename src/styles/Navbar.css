@@ -41,7 +41,7 @@
 }
 
 .nav-links li a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
@@ -60,6 +60,17 @@
   background-color: white;
   transition: width 0.3s ease;
   pointer-events: none;
+}
+
+/* Default (Home, top of page) */
+.navbar.navbar-home:not(.scrolled) .nav-links li a {
+  color: #fff;
+}
+
+/* On scroll OR any non-home route */
+.navbar.scrolled .nav-links li a,
+.navbar.navbar-default .nav-links li a {
+  color: #111;
 }
 
 .nav-links li a:hover::after {
