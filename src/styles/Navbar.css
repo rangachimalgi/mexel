@@ -41,7 +41,7 @@
 }
 
 .nav-links li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
@@ -68,7 +68,7 @@
 
 /* Default navbar for other pages */
 .navbar-default {
-  background-color: #8cb5c5;
+  background-color: #ffffff;
   color: rgb(0, 0, 0);
 }
 
@@ -87,7 +87,7 @@
 }
 
 .navbar.scrolled {
-  background-color: #8cb5c5;
+  background-color: #ffffff;
   color: #000000;
 }
 
