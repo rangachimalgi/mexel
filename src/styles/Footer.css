@@ -37,12 +37,32 @@
 }
 
 .footer-section h4 {
-  font-size: 0.95rem;
-  margin-bottom: 0.5rem;
-  color: #111;
-  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #000000;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  margin-bottom: 0.8rem;
+  font-weight: 800;
+}
+
+.footer-section p {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 0.7rem;
+  font-size: 15px; /* increased from 13.5px */
+  font-weight: 600; /* medium-bold */
+  color: #ddd;
+  line-height: 1.6;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  max-width: 300px;
+}
+
+.contact-icon {
+  margin-top: 3px;
+  flex-shrink: 0;
+  color: #d0ba7e; /* mustardy gold */
+  font-size: 15px;
 }
 
 .footer-section p,

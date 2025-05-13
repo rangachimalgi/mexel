@@ -6,7 +6,7 @@ const Contact = () => (
       <h2>Contact Us</h2>
       <p>#12/6, Neotown Rd, Opp. Govt School, Bommasandra, Bangalore 560099</p>
       <p>Phone: 96639 10215 / 98457 04566</p>
-      <p>Email: mexellengineerig@gmail.com</p>
+      <p>Email: mexellengineering@gmail.com</p>
     </div>
   </section>
 );
