@@ -16,7 +16,7 @@ const Passivation = () => {
         {/* Hero */}
         <div className="process-intro" data-aos="fade-up">
           <div className="intro-image">
-            <img src="/Passivation.jpg" alt="Passivation Equipment" />
+            <img src="/PassivationNew.jpeg" alt="Passivation Equipment" />
           </div>
           <div className="intro-text">
             <h1>PASSIVATION</h1>

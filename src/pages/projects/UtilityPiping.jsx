@@ -16,7 +16,7 @@ const UtilityPiping = () => {
         {/* Hero / Intro */}
         <div className="process-intro" data-aos="fade-up">
           <div className="intro-image">
-            <img src="/utilitypiping.png" alt="Utility Piping System" />
+            <img src="/Utility.jpeg" alt="Utility Piping System" />
           </div>
           <div className="intro-text">
             <h1>WHAT IS UTILITY PIPING?</h1>

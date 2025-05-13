@@ -15,7 +15,7 @@ const ProcessPiping = () => {
         {/* 🔥 Image left + text right intro */}
         <div className="process-intro" data-aos="fade-up">
           <div className="intro-image">
-            <img src="/process.png" alt="Process Piping" />
+            <img src="/ProcessPiping.jpeg" alt="Process Piping" />
           </div>
           <div className="intro-text">
             <h1>WHAT IS PROCESS PIPING?</h1>

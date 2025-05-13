@@ -24,7 +24,7 @@ const GasFittings = () => {
             </p>
           </div>
           <div className="split-right">
-            <img src="/gasfittings.png" alt="Gas Fittings" className="design-machine-img" />
+            <img src="/GasFitting.png" alt="Gas Fittings" className="design-machine-img" />
           </div>
         </div>
 

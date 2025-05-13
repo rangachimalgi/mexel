@@ -16,7 +16,7 @@ const GasPiping = () => {
         {/* Intro Section */}
         <div className="process-intro" data-aos="fade-up">
           <div className="intro-image">
-            <img src="/gaspiping.png" alt="Gas Piping System" />
+            <img src="/GasPiping.jpeg" alt="Gas Piping System" />
           </div>
           <div className="intro-text">
             <h1>WHAT IS GAS PIPING?</h1>
